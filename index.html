@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSD Direct — Verified USA-Made Suppliers & Authorized Reseller Opportunities</title>
+<meta name="description" content="RSD Direct is a platform that provides access to verified, made-in-USA suppliers and authorized reseller opportunities. Connect with domestic brands. Sell with integrity.">
+<meta name="keywords" content="USA made suppliers, authorized reseller USA, domestic supply chain, made in America wholesale, USA manufacturer dealer program, RSD Direct">
+<meta property="og:title" content="RSD Direct — USA-Made Supplier & Authorized Reseller Platform">
+<meta property="og:description" content="RSD Direct is a platform that connects suppliers and resellers focused on made-in-USA and domestic supply.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rsddirect.com">
+<link rel="canonical" href="https://rsddirect.com/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "RSD Direct",
+  "description": "RSD Direct is a platform that provides access to verified, made-in-USA suppliers and authorized reseller opportunities.",
+  "url": "https://rsddirect.com",
+  "telephone": "+1-434-215-4276",
+  "email": "info@realspacedigital.net",
+  "areaServed": "US",
+  "knowsAbout": ["USA Made Products","Authorized Dealer Programs","Domestic Supply Chain","Reseller Opportunities"],
+  "sameAs": ["https://realspacedigital.com"]
+}
+</script>
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* ── HERO ── */
+.hero {
+  min-height: 100vh; background: var(--navy);
+  position: relative; display: flex; align-items: center;
+  overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(201,169,97,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,169,97,0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+.hero-glow {
+  position: absolute; top: -15%; right: -5%;
+  width: 700px; height: 700px;
+  background: radial-gradient(ellipse, rgba(201,169,97,0.07) 0%, transparent 65%);
+}
+.hero-inner {
+  position: relative; max-width: var(--max-w);
+  margin: 0 auto; padding: 6rem 2rem 4rem;
+  width: 100%;
+}
+.hero-eyebrow {
+  display: flex; align-items: center; gap: 1rem;
+  font-family: var(--font-c); font-size: 0.72rem;
+  font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 2rem;
+}
+.hero-eyebrow::before {
+  content: ''; display: block;
+  width: 32px; height: 1px; background: var(--gold);
+}
+.hero-title {
+  font-family: var(--font-d);
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  font-weight: 600; line-height: 1.0;
+  color: var(--white); max-width: 820px;
+  margin-bottom: 1.75rem;
+}
+.hero-title em { color: var(--gold); font-style: normal; }
+.hero-desc {
+  font-size: 1.1rem; color: var(--grey-400);
+  max-width: 540px; line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4.5rem; }
+.hero-stats {
+  display: flex; gap: 3.5rem; flex-wrap: wrap;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+/* ── ENTITY SECTION ── */
+.entity { background: var(--white); }
+.entity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+/* ── VERTICALS ── */
+.verticals { background: var(--grey-100); }
+.v-card {
+  background: var(--white); border: 1px solid var(--grey-200);
+  padding: 2.5rem 2rem; position: relative; overflow: hidden;
+  transition: all var(--tr);
+}
+.v-card:hover {
+  border-color: var(--gold); transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+.v-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--gold);
+  transform: scaleX(0); transform-origin: left; transition: transform var(--tr);
+}
+.v-card:hover::before { transform: scaleX(1); }
+.v-num {
+  font-family: var(--font-d); font-size: 3rem;
+  font-weight: 300; color: rgba(201,169,97,0.18); line-height: 1; margin-bottom: 1rem;
+}
+.v-name {
+  font-family: var(--font-c); font-size: 1.1rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy); margin-bottom: 0.4rem;
+}
+.v-aov { font-family: var(--font-c); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 1rem; }
+.v-desc { font-size: 0.9rem; color: var(--grey-700); line-height: 1.65; margin-bottom: 1.5rem; }
+.v-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.v-tag {
+  font-family: var(--font-c); font-size: 0.62rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  background: rgba(201,169,97,0.08); color: var(--gold-dim);
+  border: 1px solid rgba(201,169,97,0.2);
+}
+/* ── HOW ── */
+.how { background: var(--navy); }
+.step-connector {
+  display: none;
+}
+@media (min-width: 769px) {
+  .steps-wrap { position: relative; }
+  .steps-wrap::before {
+    content: ''; position: absolute;
+    top: 2.5rem; left: 0; right: 0; height: 1px;
+    background: rgba(201,169,97,0.15);
+  }
+}
+/* ── REVEAL ── */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.revealed { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="RSD Direct Home">RSD <span>Direct</span></a>
+    <ul class="nav-links" role="list">
+      <li><a href="pages/domestic-direct.html">Domestic Direct</a></li>
+      <li><a href="pages/made-in-usa-suppliers.html">USA Suppliers</a></li>
+      <li><a href="pages/authorized-reseller-usa.html">Become a Reseller</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="pages/authorized-reseller-usa.html" class="nav-cta">Apply Now</a>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<nav class="nav-mobile" aria-label="Mobile navigation">
+  <a href="pages/domestic-direct.html">Domestic Direct</a>
+  <a href="pages/made-in-usa-suppliers.html">USA Suppliers</a>
+  <a href="pages/authorized-reseller-usa.html">Become a Reseller</a>
+  <a href="pages/about.html">About</a>
+  <a href="pages/contact.html">Contact</a>
+  <a href="pages/authorized-reseller-usa.html" class="btn btn-gold nav-cta">Apply Now</a>
+</nav>
+
+<main class="page-content">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow anim-up">USA-Made · Verified Suppliers · Authorized Resellers</div>
+      <h1 class="hero-title anim-up d1">
+        The Platform for<br><em>Domestic Supply</em><br>&amp; Reseller Access
+      </h1>
+      <p class="hero-desc anim-up d2">
+        RSD Direct connects buyers, resellers, and brands through a verified network of made-in-USA manufacturers — with no inventory risk and MAP-protected margins.
+      </p>
+      <div class="hero-btns anim-up d3">
+        <a href="pages/authorized-reseller-usa.html" class="btn btn-gold">Become a Reseller</a>
+        <a href="pages/made-in-usa-suppliers.html" class="btn btn-outline-white">Browse USA Suppliers</a>
+      </div>
+      <div class="hero-stats anim-up d4">
+        <div><div class="stat-num">100%</div><div class="stat-label">USA-Made Verified</div></div>
+        <div><div class="stat-num">25–40%</div><div class="stat-label">MAP-Protected Margins</div></div>
+        <div><div class="stat-num">$0</div><div class="stat-label">Inventory Required</div></div>
+        <div><div class="stat-num">3</div><div class="stat-label">Active Verticals</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTITY ANCHOR -->
+  <section class="section entity" aria-labelledby="entity-heading">
+    <div class="container entity-grid grid-align-center">
+      <div class="quote-block reveal">
+        <p>"RSD Direct is a platform that provides access to verified, made-in-USA suppliers and authorized reseller opportunities."</p>
+      </div>
+      <div class="reveal">
+        <span class="label">Platform Definition</span>
+        <h2 class="heading-lg" id="entity-heading">What RSD Direct Is</h2>
+        <div class="gold-rule"></div>
+        <p class="body-lg">RSD Direct connects suppliers and resellers focused on made-in-USA and domestic supply. We operate as an authorized dealer network — matching premium American manufacturers with qualified resellers who want to sell high-ticket products without holding inventory.</p>
+        <p class="body-md" style="margin-top:1rem;">Powered by Real Space Digital's avatar and automation stack, every product in the RSD Direct network is supported by AI-powered buyer education, media-grade content, and MAP-compliant distribution.</p>
+        <a href="pages/about.html" class="btn btn-outline-gold" style="margin-top:1.75rem;">Learn More About RSD Direct</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERTICALS -->
+  <section class="section verticals" aria-labelledby="verticals-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Product Verticals</span>
+        <h2 class="heading-lg" id="verticals-heading">Three Domestic Categories</h2>
+        <div class="gold-rule"></div>
+        <p class="body-md" style="margin-top:0.5rem;max-width:560px;">Each vertical is curated for USA-made provenance, active dealer program availability, and high-ticket reseller margin potential.</p>
+      </div>
+      <div class="grid-3">
+        <article class="v-card reveal d1">
+          <div class="v-num">01</div>
+          <div class="v-name">Wellness &amp; Recovery</div>
+          <div class="v-aov">AOV $500 – $15,000  ·  Lead Vertical</div>
+          <p class="v-desc">Cold plunges, infrared saunas, red light therapy, and recovery systems — the fastest-growing home wellness category, all USA-manufactured with active dealer programs.</p>
+          <div class="v-tags">
+            <span class="v-tag">Cold Plunge</span>
+            <span class="v-tag">Infrared Sauna</span>
+            <span class="v-tag">Red Light</span>
+            <span class="v-tag">Recovery</span>
+          </div>
+        </article>
+        <article class="v-card reveal d2">
+          <div class="v-num">02</div>
+          <div class="v-name">Outdoor Living</div>
+          <div class="v-aov">AOV $1,500 – $25,000  ·  Phase 2</div>
+          <p class="v-desc">Pergolas, outdoor kitchens, luxury patio structures, and premium cedar — domestic craftsmanship at its highest expression, with MAP-protected reseller programs.</p>
+          <div class="v-tags">
+            <span class="v-tag">Pergolas</span>
+            <span class="v-tag">Outdoor Kitchen</span>
+            <span class="v-tag">Cedar</span>
+            <span class="v-tag">Patio</span>
+          </div>
+        </article>
+        <article class="v-card reveal d3">
+          <div class="v-num">03</div>
+          <div class="v-name">Home &amp; Lifestyle</div>
+          <div class="v-aov">AOV $80 – $400  ·  Velocity Layer</div>
+          <p class="v-desc">USA-stocked home comfort, pet tech, and lifestyle accessories — the velocity layer that drives repeat purchase, customer acquisition, and CAC data.</p>
+          <div class="v-tags">
+            <span class="v-tag">Home Comfort</span>
+            <span class="v-tag">Pet Tech</span>
+            <span class="v-tag">Lifestyle</span>
+            <span class="v-tag">Accessories</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how" aria-labelledby="how-heading">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">The Process</span>
+        <h2 class="heading-lg light" id="how-heading">How RSD Direct Works</h2>
+        <div class="gold-rule"></div>
+      </div>
+      <div class="grid-4 steps-wrap">
+        <div class="reveal d1">
+          <div class="step-num">01</div>
+          <div class="step-title">Apply as a Reseller</div>
+          <p class="step-body">Submit your reseller profile. We verify your business and match you to the right supplier tier for your vertical and market.</p>
+        </div>
+        <div class="reveal d2">
+          <div class="step-num">02</div>
+          <div class="step-title">Get Dealer Approved</div>
+          <p class="step-body">We guide your authorized dealer applications with vetted USA manufacturers — with full MAP compliance and store setup guidance.</p>
+        </div>
+        <div class="reveal d3">
+          <div class="step-num">03</div>
+          <div class="step-title">Build Your Storefront</div>
+          <p class="step-body">Launch your Shopify store with Genie Vee™ — RSD Direct's AI avatar product educator that no competing reseller can replicate.</p>
+        </div>
+        <div class="reveal d4">
+          <div class="step-num">04</div>
+          <div class="step-title">Sell &amp; Scale</div>
+          <p class="step-body">No inventory. No warehouse. Your supplier ships direct. You control the brand experience, the margin, and the customer relationship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <div class="cta-band" role="complementary">
+    <div class="cta-band-inner">
+      <h2 class="cta-band-title">Ready to access verified USA-made suppliers and become an authorized reseller?</h2>
+      <a href="pages/authorized-reseller-usa.html" class="btn btn-navy">Start Your Application</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">RSD <span>Direct</span></div>
+      <p class="footer-tagline">A platform that provides access to verified, made-in-USA suppliers and authorized reseller opportunities. A division of Real Space Digital.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="pages/domestic-direct.html">Domestic Direct</a>
+      <a href="pages/made-in-usa-suppliers.html">USA Suppliers</a>
+      <a href="pages/authorized-reseller-usa.html">Become a Reseller</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="pages/about.html">About RSD Direct</a>
+      <a href="pages/contact.html">Contact</a>
+      <a href="https://realspacedigital.com" target="_blank" rel="noopener">Real Space Digital</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:info@realspacedigital.net">info@realspacedigital.net</a>
+      <a href="tel:4342154276">(434) 215-4276</a>
+      <a href="https://calendly.com/realspacedigital/30min" target="_blank" rel="noopener">Schedule a Call</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 RSD Direct — A Division of Real Space Digital. All rights reserved.</p>
+    <p class="footer-copy">rsddirect.com &middot; Digitizing Reality, Elevating Sales</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

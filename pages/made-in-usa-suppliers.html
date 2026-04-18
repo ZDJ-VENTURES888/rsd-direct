@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Made in USA Suppliers — Verified Manufacturer Directory | RSD Direct</title>
+<meta name="description" content="Browse RSD Direct's verified directory of made-in-USA manufacturers offering authorized dealer and reseller programs across wellness, outdoor living, and lifestyle categories.">
+<meta name="keywords" content="made in USA suppliers, USA manufacturer dealer program, domestic supply chain, American made wholesale, authorized dealer USA, verified USA suppliers">
+<link rel="canonical" href="https://rsddirect.com/made-in-usa-suppliers">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Made in USA Suppliers — RSD Direct Verified Directory",
+  "description": "Verified directory of USA-made manufacturers with active authorized dealer and reseller programs.",
+  "url": "https://rsddirect.com/made-in-usa-suppliers",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Plunge Cold Plunge","description":"USA-made cold plunge systems with active dealer program"},
+    {"@type":"ListItem","position":2,"name":"The Luxury Pergola","description":"USA-made motorized pergola systems with authorized dealer network"},
+    {"@type":"ListItem","position":3,"name":"Clearlight Saunas","description":"USA-manufactured infrared saunas with MAP-protected dealer program"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.page-hero { background: var(--navy); padding: 5rem 2rem 4rem; }
+.page-hero-inner { max-width: var(--max-w); margin: 0 auto; }
+.supplier-section { padding: 4rem 2rem; }
+.supplier-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.75rem; }
+.s-card {
+  background: var(--white); border: 1px solid var(--grey-200);
+  padding: 2rem; transition: all var(--tr); position: relative;
+}
+.s-card:hover { border-color: var(--gold); box-shadow: var(--shadow); transform: translateY(-2px); }
+.s-tier {
+  position: absolute; top: 1.25rem; right: 1.25rem;
+  font-family: var(--font-c); font-size: 0.6rem; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 0.22rem 0.6rem;
+}
+.tier-1 { background: rgba(201,169,97,0.12); color: var(--gold); border: 1px solid rgba(201,169,97,0.3); }
+.tier-2 { background: rgba(26,107,60,0.08); color: var(--green); border: 1px solid rgba(26,107,60,0.25); }
+.s-cat { font-family: var(--font-c); font-size: 0.64rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; }
+.s-name { font-family: var(--font-d); font-size: 1.35rem; font-weight: 600; color: var(--navy); margin-bottom: 0.3rem; }
+.s-loc { font-size: 0.8rem; color: var(--grey-400); margin-bottom: 1rem; }
+.s-desc { font-size: 0.88rem; color: var(--grey-700); line-height: 1.65; margin-bottom: 1.25rem; }
+.s-meta { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.25rem; }
+.s-meta-row { display: flex; justify-content: space-between; font-size: 0.82rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--grey-100); }
+.s-meta-label { color: var(--grey-400); font-family: var(--font-c); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+.s-meta-val { color: var(--navy); font-weight: 600; }
+.s-map { font-size: 0.78rem; color: var(--green); font-weight: 600; margin-bottom: 1rem; }
+.s-apply {
+  display: block; font-family: var(--font-c); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  background: var(--navy); color: var(--gold);
+  text-align: center; padding: 0.75rem;
+  text-decoration: none; transition: background var(--tr);
+}
+.s-apply:hover { background: var(--navy-mid); }
+/* Legend */
+.legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; align-items: center; }
+.legend-item { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-c); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grey-600); }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; }
+.ld-1 { background: var(--gold); }
+.ld-2 { background: var(--green); }
+/* SEO COPY SECTION */
+.seo-section { background: var(--grey-100); }
+.seo-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; }
+.seo-block h3 { font-family: var(--font-c); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--navy); margin-bottom: 0.75rem; }
+.seo-block p { font-size: 0.9rem; color: var(--grey-700); line-height: 1.7; }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.revealed { opacity: 1; transform: none; }
+@media(max-width:900px){ .supplier-grid,.seo-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width:600px){ .supplier-grid,.seo-grid { grid-template-columns: 1fr; } .nav-links,.nav-cta{display:none;} .nav-burger{display:flex;} }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">RSD <span>Direct</span></a>
+    <ul class="nav-links">
+      <li><a href="domestic-direct.html">Domestic Direct</a></li>
+      <li><a href="made-in-usa-suppliers.html" class="active">USA Suppliers</a></li>
+      <li><a href="authorized-reseller-usa.html">Become a Reseller</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="authorized-reseller-usa.html" class="nav-cta">Apply Now</a>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<nav class="nav-mobile">
+  <a href="domestic-direct.html">Domestic Direct</a>
+  <a href="made-in-usa-suppliers.html" class="active">USA Suppliers</a>
+  <a href="authorized-reseller-usa.html">Become a Reseller</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="authorized-reseller-usa.html" class="btn btn-gold nav-cta">Apply Now</a>
+</nav>
+
+<main class="page-content">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">RSD Direct</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Made in USA Suppliers</span>
+      </nav>
+      <span class="label">Verified · Domestic · MAP-Protected</span>
+      <h1 class="heading-xl light anim-up">Made in USA<br>Supplier Directory</h1>
+      <div class="gold-rule anim-up d1"></div>
+      <p class="body-lg light anim-up d2" style="max-width:600px;">Every manufacturer in the RSD Direct network is verified for USA-made provenance, active dealer program availability, MAP policy enforcement, and drop-ship capability. These are the brands you can become an authorized reseller for — starting today.</p>
+    </div>
+  </section>
+
+  <section class="supplier-section">
+    <div class="container">
+      <div class="legend reveal">
+        <span style="font-family:var(--font-c);font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--grey-400);">Approval Tier:</span>
+        <div class="legend-item"><div class="legend-dot ld-1"></div>Tier 1 — Start Here (Easiest)</div>
+        <div class="legend-item"><div class="legend-dot ld-2"></div>Tier 2 — With Approvals in Hand</div>
+      </div>
+
+      <h2 class="heading-md reveal" style="margin-bottom:1.5rem;">Wellness &amp; Recovery</h2>
+      <div class="supplier-grid" style="margin-bottom:3.5rem;">
+
+        <article class="s-card reveal">
+          <div class="s-tier tier-1">Tier 1</div>
+          <div class="s-cat">Wellness · Cold Therapy</div>
+          <h3 class="s-name">Plunge</h3>
+          <div class="s-loc">USA — Direct-to-Consumer + Dealer</div>
+          <p class="s-desc">Industry-leading cold plunge systems for home and commercial use. Open digital-first partner and dealer program — the easiest approval on the Tier 1 list.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$500 – $6,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">25–30%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Partner / Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal d1">
+          <div class="s-tier tier-1">Tier 1</div>
+          <div class="s-cat">Wellness · Cold Therapy</div>
+          <h3 class="s-name">Iceology Cold Plunge</h3>
+          <div class="s-loc">Greenville, South Carolina — USA Made</div>
+          <p class="s-desc">100% USA-made hard-sided cold plunge tubs with integrated chiller systems. Rotomolded in SC. Actively seeking dealers with no showroom requirement.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$2,000 – $5,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">25–35%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Authorized Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal d2">
+          <div class="s-tier tier-1">Tier 1</div>
+          <div class="s-cat">Wellness · Recovery</div>
+          <h3 class="s-name">ReGen Total Wellness</h3>
+          <div class="s-loc">USA — Commercial-Grade Recovery</div>
+          <p class="s-desc">Premium USA-made cold plunge and wellness recovery systems built for everyday high-performance use. Growing dealer network — ideal Tier 1 entry point.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$1,500 – $5,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">25–35%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Authorized Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal">
+          <div class="s-tier tier-1">Tier 1</div>
+          <div class="s-cat">Wellness · Red Light + Recovery</div>
+          <h3 class="s-name">HigherDOSE</h3>
+          <div class="s-loc">USA — Wellness Lifestyle Brand</div>
+          <p class="s-desc">Premium red light therapy, sauna blankets, and recovery tools. Affiliate-first model that converts into dealer relationships — strong digital-first fit for RSD Direct.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$500 – $2,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">20–30%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Affiliate → Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal d1">
+          <div class="s-tier tier-2">Tier 2</div>
+          <div class="s-cat">Wellness · Infrared Sauna</div>
+          <h3 class="s-name">Clearlight Saunas</h3>
+          <div class="s-loc">California, USA — Premium Infrared</div>
+          <p class="s-desc">Industry benchmark for full-spectrum infrared saunas. Strict authorized dealer program requiring a live storefront and prior approvals. Best approached at Tier 2.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$3,000 – $15,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">30–40%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Authorized Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal d2">
+          <div class="s-tier tier-2">Tier 2</div>
+          <div class="s-cat">Wellness · Infrared Sauna</div>
+          <h3 class="s-name">Sunlighten Saunas</h3>
+          <div class="s-loc">Kansas City, MO — USA Manufactured</div>
+          <p class="s-desc">Premium infrared sauna manufacturer with rigorous dealer vetting. Requires live store, approved branding, and MAP commitment upfront. High-margin Tier 2 target.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$2,000 – $10,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">28–38%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Authorized Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+      </div>
+
+      <h2 class="heading-md reveal" style="margin-bottom:1.5rem;">Outdoor Living</h2>
+      <div class="supplier-grid" style="margin-bottom:3.5rem;">
+        <article class="s-card reveal">
+          <div class="s-tier tier-1">Tier 1</div>
+          <div class="s-cat">Outdoor Living · Pergola</div>
+          <h3 class="s-name">The Luxury Pergola</h3>
+          <div class="s-loc">USA — Factory Direct Dealer Model</div>
+          <p class="s-desc">Published dealer program with no minimum order and no inventory requirement. Motorized louvered pergola systems — highest AOV in the outdoor vertical.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$5,000 – $25,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">28–38%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Authorized Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal d1">
+          <div class="s-tier tier-1">Tier 1</div>
+          <div class="s-cat">Outdoor Living · Cedar</div>
+          <h3 class="s-name">All Things Cedar</h3>
+          <div class="s-loc">USA — Western Red Cedar</div>
+          <p class="s-desc">Premium western red cedar outdoor furniture, planters, saunas, and structures. Mid-tier AOV with strong digital presence — accessible reseller program.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$1,000 – $5,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">25–35%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Reseller / Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+
+        <article class="s-card reveal d2">
+          <div class="s-tier tier-2">Tier 2</div>
+          <div class="s-cat">Outdoor Living · Pergola</div>
+          <h3 class="s-name">Sunset Pergolas</h3>
+          <div class="s-loc">USA — Premium Outdoor Structures</div>
+          <p class="s-desc">High-end motorized and fixed pergola systems with custom configurations. Approach with live storefront and 1–2 outdoor living dealer approvals already in hand.</p>
+          <div class="s-meta">
+            <div class="s-meta-row"><span class="s-meta-label">Est. AOV</span><span class="s-meta-val">$3,000 – $15,000</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Margin</span><span class="s-meta-val">26–36%</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Program Type</span><span class="s-meta-val">Authorized Dealer</span></div>
+            <div class="s-meta-row"><span class="s-meta-label">Drop-Ship</span><span class="s-meta-val">Yes</span></div>
+          </div>
+          <div class="s-map">✓ MAP Policy Enforced</div>
+          <a href="authorized-reseller-usa.html" class="s-apply">Apply to Resell</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEO CONTENT BLOCK -->
+  <section class="section seo-section" aria-label="About USA supplier programs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Why RSD Direct</span>
+        <h2 class="heading-lg" id="why-heading">The Case for USA-Made Authorized Dealer Programs</h2>
+        <div class="gold-rule"></div>
+      </div>
+      <div class="seo-grid">
+        <div class="seo-block reveal">
+          <h3>MAP Protection = Margin Protection</h3>
+          <p>USA-made manufacturers enforce Minimum Advertised Price policies to protect their dealer network from race-to-the-bottom pricing. As an authorized reseller, your 25–40% margin is contractually protected — no competing with offshore dumpers on price.</p>
+        </div>
+        <div class="seo-block reveal d1">
+          <h3>Drop-Ship = Zero Inventory Risk</h3>
+          <p>Every supplier in the RSD Direct network ships directly to your end customer. You never touch the product. No warehouse. No capital tied up in inventory. Your margin flows from order confirmation to your account, period.</p>
+        </div>
+        <div class="seo-block reveal d2">
+          <h3>Domestic Supply = Delivery Certainty</h3>
+          <p>USA-made and USA-stocked products mean predictable lead times, no customs delays, no tariff exposure, and domestic warranty fulfillment — all of which your customer will pay a premium for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <h2 class="cta-band-title">Found a supplier you want to resell? Apply for your authorized dealer position today.</h2>
+      <a href="authorized-reseller-usa.html" class="btn btn-navy">Start Your Application</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">RSD <span>Direct</span></div>
+      <p class="footer-tagline">A platform that provides access to verified, made-in-USA suppliers and authorized reseller opportunities. A division of Real Space Digital.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="domestic-direct.html">Domestic Direct</a>
+      <a href="made-in-usa-suppliers.html">USA Suppliers</a>
+      <a href="authorized-reseller-usa.html">Become a Reseller</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About RSD Direct</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://realspacedigital.com" target="_blank" rel="noopener">Real Space Digital</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:info@realspacedigital.net">info@realspacedigital.net</a>
+      <a href="tel:4342154276">(434) 215-4276</a>
+      <a href="https://calendly.com/realspacedigital/30min" target="_blank" rel="noopener">Schedule a Call</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">&copy; 2026 RSD Direct — A Division of Real Space Digital. All rights reserved.</p>
+    <p class="footer-copy">rsddirect.com &middot; Digitizing Reality, Elevating Sales</p>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

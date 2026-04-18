@@ -1,0 +1,17 @@
+{
+  "name": "rsd-direct",
+  "version": "1.0.0",
+  "description": "RSD Direct — Verified USA-Made Suppliers & Authorized Reseller Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev":   "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["usa-made", "authorized-reseller", "domestic-supply", "rsd-direct"],
+  "author": "Real Space Digital — Zackary D. Jackson",
+  "license": "UNLICENSED",
+  "private": true
+}
